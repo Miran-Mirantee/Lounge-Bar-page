@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miran-Mirantee/Restaurant-page.git"
+  },
+  "author": "Mirantee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miran-Mirantee/Restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Miran-Mirantee/Restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
