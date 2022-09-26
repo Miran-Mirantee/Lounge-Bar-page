@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: darkblue;
+}
+
+#content {
+    display: flex;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+
+}
+
+.tab {
+    display: flex;
+}
+
+.home {
+
+}
+
+.menu {
+
+}
+
+.about {
+
+}
+
+.body {
+    display: flex;
+}
+
+.welcome-message {
+
+}
+
+.body-img {
+
+}
+
+.recommended-drinks {
+    
+}
