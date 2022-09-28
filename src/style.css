@@ -5,18 +5,30 @@ body {
 
 #content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 
 .header {
     display: flex;
+    flex-direction: column;
+    width: 65%;
+    border: 1px solid red;
+    align-items: center;
 }
 
 .logo {
-
+    display: flex;
+    border: 1px solid red;
+    padding: 50px;
 }
 
 .tab {
     display: flex;
+    border: 1px solid red;
+    gap: 5px;
+    margin: 8px;
 }
 
 .home {
@@ -33,6 +45,7 @@ body {
 
 .body {
     display: flex;
+    border: 1px solid red;
 }
 
 .welcome-message {
