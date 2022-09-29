@@ -31,9 +31,10 @@ body {
     align-items: center;
 }
 
-.logo {
+img.logo {
     display: flex;
-    padding: 50px;
+    padding: 25px 50px;
+    min-width: 30%;
 }
 
 .tab {
@@ -56,9 +57,11 @@ body {
 
 .body {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .headline {
@@ -75,11 +78,65 @@ img.body-img{
     min-width: 50%;
 }
 
+.recommended-drinks-container {
+    height: 110px;
+}
+
 .recommended-drinks {
     /* display: flex; */
-    background-image: url(./assets/img/drinks/Bad_Touch.png), url(./assets/img/drinks/Brandtini.png), url(./assets/img/drinks/BlueFairy.png);
+    position: absolute;
+    bottom: 0%;
+    background-image: 
+        url(./assets/img/drinks/Bad_Touch.png), 
+        url(./assets/img/drinks/Brandtini.png), 
+        /* url(./assets/img/drinks/BlueFairy.png), */
+        url(./assets/img/drinks/Fluffy_Dream.png),
+        url(./assets/img/drinks/Marsblast.png),
+        url(./assets/img/drinks/Cobalt_Velvet.png),
+        url(./assets/img/drinks/FlamingMoai.png),
+        url(./assets/img/drinks/Piano_Man.png),
+        url(./assets/img/drinks/Suplex.png),
+        url(./assets/img/drinks/Bleeding_Jane.png),
+        url(./assets/img/drinks/GutPunch.png)
+    ;
+    background-position: 
+        0% 50%,
+        10% 50%, 
+        20% 50%, 
+        30% 50%, 
+        40% 50%,
+        50% 50%,
+        60% 50%,
+        71% 50%,
+        81% 50%,
+        92% 50%
+    /* 100% 50% */
+    ;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: darkred;
+    animation: right-to-left 10s linear infinite;
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.recommended-drinks.second {
+    animation: right-to-left2 10s linear infinite
+}
+
+@keyframes right-to-left2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
