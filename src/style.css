@@ -1,32 +1,43 @@
+@font-face {
+    font-family: CyberpunkWaifus;
+    src: url(./assets/fonts/CyberpunkWaifus.ttf);
+}
+
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
     background-color: darkblue;
+    color: white;
+    font-family: "CyberpunkWaifus";
+    font-size: 2rem;
 }
 
 #content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 65vw;
+}
+
+.temp-border {
+    border: 1px solid red;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    width: 65%;
-    border: 1px solid red;
+    width: 100%;
     align-items: center;
 }
 
 .logo {
     display: flex;
-    border: 1px solid red;
     padding: 50px;
 }
 
 .tab {
     display: flex;
-    border: 1px solid red;
     gap: 5px;
     margin: 8px;
 }
@@ -45,11 +56,12 @@ body {
 
 .body {
     display: flex;
-    border: 1px solid red;
+    flex-direction: column;
+    width: 100%;
 }
 
 .welcome-message {
-
+    padding: 8px;
 }
 
 .body-img {
