@@ -1,0 +1,30 @@
+        <div class="header temp-border">
+            <img src="../src/assets/img/logo.png" alt="vallhalla logo" class="logo temp-border">
+            <div class="tab temp-border">
+                <button class="home btn">Home</button>
+                <button class="menu btn">Menu</button>
+                <button class="about btn">About</button>
+            </div>
+        </div>
+        <div class="body temp-border">
+            <div class="welcome headline">
+                Welcome to Va-11 hall-a
+            </div>
+            <img src="../src/assets/img/bar.webp" alt="vallhalla from outside" class="body-img">
+            <div class="welcome text">
+                <p>
+                    On a small road just seconds away from the main street, somewhere near the slums, 
+                    you can find the Hall A of the BTC-certified bar coded VA-11...
+                </p>
+                <p>
+                    ...but that's a mouthful, so we just call it Valhalla.
+                </p>
+                <p>
+                    A small oasis in the middle of the concrete desert. A fountain of spirits waiting for tired souls.
+                </p>
+            </div>
+            <div class="recommended-drinks-container">
+                <div class="recommended-drinks"></div>
+                <div class="recommended-drinks second"></div>  
+            </div>
+        </div>
