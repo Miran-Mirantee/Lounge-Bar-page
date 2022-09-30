@@ -1,1 +1,1 @@
-console.log("I think it worked!");
+(()=>{console.log("I think it worked!");const e=document.getElementById("content"),t=document.createElement("div");t.classList.add("header","temp-border"),e.appendChild(t)})();
