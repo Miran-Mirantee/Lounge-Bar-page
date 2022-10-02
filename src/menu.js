@@ -1,42 +1,4 @@
-console.log(`I think it worked!`);
-
-import menu from './menu.js';
-// import './style.css';
-
-function setAttributes(element, attrs) {
-    for (let key in attrs) {
-        element.setAttribute(key, attrs[key]);
-    }
-}
-
-const content = document.getElementById('content');
-
-const header = (() => {
-    const header = document.createElement('div');
-    header.classList.add('header', 'temp-border');
-
-    const logo = document.createElement('img');
-    setAttributes(logo, {'src': '../src/assets/img/logo.png', 'alt': 'vallhalla logo', 'class': 'logo temp-border'});
-    
-    const tab = document.createElement('div');
-    tab.classList.add('tab', 'temp-border');   
-    const homeBtn = document.createElement('button');
-    const menuBtn = document.createElement('button');
-    const aboutBtn = document.createElement('button');
-    homeBtn.classList.add('home', 'btn');
-    menuBtn.classList.add('menu', 'btn');
-    aboutBtn.classList.add('about', 'btn');
-    homeBtn.textContent = 'Home';
-    menuBtn.textContent = 'Menu';
-    aboutBtn.textContent = 'About';
-    homeBtn.addEventListener('click', () => home());
-    menuBtn.addEventListener('click', () => menu(content));
-    tab.append(homeBtn, menuBtn, aboutBtn);
-    header.append(logo, tab);
-    content.appendChild(header);    
-})();
-
-const home = () => {
+const menu = (content) => {
     const body = document.createElement('div');
     body.classList.add('body', 'temp-border');
 
@@ -69,5 +31,7 @@ const home = () => {
     content.appendChild(body);
 };
 
-// home();
-
+export default menu;
+export {
+    
+};
