@@ -1,13 +1,8 @@
 console.log(`I think it worked!`);
 
 import menu from './menu.js';
-// import './style.css';
-
-function setAttributes(element, attrs) {
-    for (let key in attrs) {
-        element.setAttribute(key, attrs[key]);
-    }
-}
+import setAttributes from './setAttrs.js';
+import './style.css';
 
 const content = document.getElementById('content');
 

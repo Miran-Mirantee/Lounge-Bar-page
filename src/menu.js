@@ -1,3 +1,6 @@
+import setAttributes from "./setAttrs";
+
+// for testing
 const menu = (content) => {
     const body = document.createElement('div');
     body.classList.add('body', 'temp-border');
@@ -32,6 +35,3 @@ const menu = (content) => {
 };
 
 export default menu;
-export {
-    
-};
