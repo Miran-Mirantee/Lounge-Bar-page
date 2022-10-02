@@ -140,3 +140,37 @@ img.body-img{
         transform: translateX(-100%);
     }
 }
+
+.drink-container {
+    margin: 48px 0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 50px;
+}
+
+.drink {
+    background-color: darkred;
+    width: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.drink-name {
+    align-self: flex-start;
+}
+
+img.drink-img {
+    height: 64px;
+}
+
+.price {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+

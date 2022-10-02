@@ -53,7 +53,7 @@ const home = () => {
     welcomeHead.textContent = 'Welcome to Va-11 hall-a';
 
     const img = document.createElement('img');
-    setAttributes(img, {'src': './assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
+    setAttributes(img, {'src': '../src/assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
 
     const welcomeText = document.createElement('div');
     welcomeText.classList.add('welcome', 'text');
