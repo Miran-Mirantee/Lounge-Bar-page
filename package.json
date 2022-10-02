@@ -1,5 +1,5 @@
 {
-  "name": "restaurant-page",
+  "name": "lounge-bar-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Miran-Mirantee/Restaurant-page.git"
+    "url": "git+https://github.com/Miran-Mirantee/Lounge-Bar-page.git"
   },
   "author": "Mirantee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Miran-Mirantee/Restaurant-page/issues"
+    "url": "https://github.com/Miran-Mirantee/Lounge-Bar-page/issues"
   },
-  "homepage": "https://github.com/Miran-Mirantee/Restaurant-page#readme",
+  "homepage": "https://github.com/Miran-Mirantee/Lounge-Bar-page#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",

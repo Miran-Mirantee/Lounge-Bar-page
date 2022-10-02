@@ -6,6 +6,13 @@ import './style.css';
 
 const content = document.getElementById('content');
 
+function clearBody() {
+    const body = document.querySelector('.body');
+    if (body) {
+        body.remove();
+    }
+}
+
 const header = (() => {
     const header = document.createElement('div');
     header.classList.add('header', 'temp-border');
@@ -24,8 +31,14 @@ const header = (() => {
     homeBtn.textContent = 'Home';
     menuBtn.textContent = 'Menu';
     aboutBtn.textContent = 'About';
-    homeBtn.addEventListener('click', () => home());
-    menuBtn.addEventListener('click', () => menu(content));
+    homeBtn.addEventListener('click', () => {
+        clearBody();
+        home();
+    });
+    menuBtn.addEventListener('click', () => {
+        clearBody();
+        menu(content);
+    });
     tab.append(homeBtn, menuBtn, aboutBtn);
     header.append(logo, tab);
     content.appendChild(header);    
@@ -40,7 +53,7 @@ const home = () => {
     welcomeHead.textContent = 'Welcome to Va-11 hall-a';
 
     const img = document.createElement('img');
-    setAttributes(img, {'src': '../src/assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
+    setAttributes(img, {'src': './assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
 
     const welcomeText = document.createElement('div');
     welcomeText.classList.add('welcome', 'text');
