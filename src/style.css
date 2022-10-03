@@ -174,3 +174,70 @@ img.drink-img {
     align-self: flex-end;
 }
 
+.vid {
+    width: 600px;
+    height: auto;
+}
+
+.btn {
+    background-color: darkred;
+    color: white;
+    border-style: none;
+}
+
+.offer {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 3fr 4fr;
+    margin: 16px 0;
+}
+
+.offer > div {
+    background-color: red;
+}
+
+.portrait {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 16px;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1500px) {
+    .plush.text {
+        color: aqua;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .plush.text {
+        color: aqua;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .offer {
+        display: flex;
+        flex-direction: column;
+    }
+    .plush.text {
+        color: aqua;
+        font-size: 1.5rem;
+    }
+}
+
+img.plush-img {
+    height: auto;
+    width: 50%;
+}
+

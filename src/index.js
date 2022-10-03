@@ -1,6 +1,7 @@
 console.log(`I think it worked!`);
 
 import menu from './menu.js';
+import about from './about.js';
 import setAttributes from './setAttrs.js';
 import './style.css';
 
@@ -38,6 +39,10 @@ const header = (() => {
     menuBtn.addEventListener('click', () => {
         clearBody();
         menu(content);
+    });
+    aboutBtn.addEventListener('click', () => {
+        clearBody();
+        about(content);
     });
     tab.append(homeBtn, menuBtn, aboutBtn);
     header.append(logo, tab);
@@ -77,5 +82,6 @@ const home = () => {
     content.appendChild(body);
 };
 
+about(content);
 // home();
 
