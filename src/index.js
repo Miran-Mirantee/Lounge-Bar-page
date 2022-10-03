@@ -14,6 +14,12 @@ function clearBody() {
     }
 }
 
+const background = (() => {
+    const background = document.createElement('div');
+    background.classList.add('bg');
+    document.body.appendChild(background);
+})();
+
 const header = (() => {
     const header = document.createElement('div');
     header.classList.add('header', 'temp-border');
@@ -55,7 +61,7 @@ const home = () => {
 
     const welcomeHead = document.createElement('div');
     welcomeHead.classList.add('welcome', 'headline');
-    welcomeHead.textContent = 'Welcome to Va-11 hall-a';
+    welcomeHead.textContent = 'Welcome to VA-11 Hall-A';
 
     const img = document.createElement('img');
     setAttributes(img, {'src': '../src/assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
@@ -82,6 +88,5 @@ const home = () => {
     content.appendChild(body);
 };
 
-about(content);
-// home();
+home();
 

@@ -6,6 +6,7 @@
 body {
     margin: 0;
     display: flex;
+    position: relative;
     justify-content: center;
     background-color: darkblue;
     color: white;
@@ -13,9 +14,23 @@ body {
     font-size: 1.8rem;
 }
 
+.bg {
+    position: fixed;
+    background-image: url('./assets/img/bg2.webp');
+    top: 0;
+    left: 0;    
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
 #content {
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
     align-items: center;
     width: 65vw;
 }
