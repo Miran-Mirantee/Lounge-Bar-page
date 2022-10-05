@@ -22,13 +22,13 @@ const background = (() => {
 
 const header = (() => {
     const header = document.createElement('div');
-    header.classList.add('header', 'temp-border');
+    header.classList.add('header');
 
     const logo = document.createElement('img');
-    setAttributes(logo, {'src': '../src/assets/img/logo.png', 'alt': 'vallhalla logo', 'class': 'logo temp-border'});
+    setAttributes(logo, {'src': '../src/assets/img/logo.png', 'alt': 'vallhalla logo', 'class': 'logo'});
     
     const tab = document.createElement('div');
-    tab.classList.add('tab', 'temp-border');   
+    tab.classList.add('tab');   
     const homeBtn = document.createElement('button');
     const menuBtn = document.createElement('button');
     const aboutBtn = document.createElement('button');
@@ -50,14 +50,15 @@ const header = (() => {
         clearBody();
         about(content);
     });
+    
     tab.append(homeBtn, menuBtn, aboutBtn);
-    header.append(logo, tab);
-    content.appendChild(header);    
+    header.append(tab);
+    content.append(logo, header);    
 })();
 
 const home = () => {
     const body = document.createElement('div');
-    body.classList.add('body', 'temp-border');
+    body.classList.add('body');
 
     const welcomeHead = document.createElement('div');
     welcomeHead.classList.add('welcome', 'headline');

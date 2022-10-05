@@ -47,7 +47,7 @@ drinks.push(new drink('Zen Star', "../src/assets/img/drinks/Zen_Star.png", "You'
 
 const menu = (content) => {
     const body = document.createElement('div');
-    body.classList.add('body', 'temp-border');
+    body.classList.add('body');
 
     const headline = document.createElement('div');
     headline.classList.add('menu', 'headline');
@@ -74,8 +74,8 @@ const menu = (content) => {
         drinkContainer.append(drink);
     }
 
-    const note = document.createElement('div');
-    note.classList.add('note');
+    const note = document.createElement('a');
+    setAttributes(note, {'class': 'note', 'href': 'https://va11halla.fandom.com/wiki/Drinktionary'})
     note.textContent = 'Information from: https://va11halla.fandom.com/wiki/Drinktionary';
 
     body.append(headline, drinkContainer, note);

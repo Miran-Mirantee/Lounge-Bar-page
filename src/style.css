@@ -33,10 +33,20 @@ body {
     backdrop-filter: blur(3px);
     align-items: center;
     width: 65vw;
+    border: 1px solid #f32a70;
+    box-shadow: 0px 0px 50px 0px #f50056;
+    /* animation: glowing 2s alternate infinite; */
+    /* border: 1px solid #00f54a;
+    box-shadow: 0px 0px 50px 0px #00f54a; */
 }
 
-.temp-border {
-    border: 1px solid red;
+@keyframes glowing {
+    0% {
+        box-shadow: 0px 0px 50px 0px #f50056;
+    }
+    100% {
+        box-shadow: 0px 0px 50px 0px #ff0059b0; 
+    }
 }
 
 .header {
@@ -44,18 +54,20 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: 0 18px;
     background-color: #1f1a2e;
     box-shadow: 
         0px 0px 0px 2px #1f1a2e,
         0px 0px 0px 4px #151024,
         0px 0px 0px 10px #1f1a2e,
-        0px 0px 0px 12px #2a2637; 
+        0px 0px 0px 12px #2a2637;
 }
 
 img.logo {
     display: flex;
     padding: 25px 50px;
     min-width: 30%;
+    margin: 16px 0;
 }
 
 .tab {
@@ -87,6 +99,8 @@ img.logo {
 
 .headline {
     font-size: 3rem;
+    /* font-weight: bold; */
+    text-shadow: 3px 3px #00699b;
     align-self: flex-start;
     padding: 32px;
 }
@@ -284,3 +298,11 @@ img.plush-img {
     width: 50%;
 }
 
+.note {
+    font-size: 1.5rem;
+    margin: 8px;
+}
+
+a:visited {
+    color: white;
+}

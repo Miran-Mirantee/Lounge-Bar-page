@@ -2,7 +2,7 @@ import setAttributes from './setAttrs.js';
 
 const about = (content) => {
     const body = document.createElement('div');
-    body.classList.add('body', 'temp-border');
+    body.classList.add('body');
 
     const headline = document.createElement('div');
     headline.classList.add('about', 'headline');
