@@ -44,6 +44,12 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-color: #1f1a2e;
+    box-shadow: 
+        0px 0px 0px 2px #1f1a2e,
+        0px 0px 0px 4px #151024,
+        0px 0px 0px 10px #1f1a2e,
+        0px 0px 0px 12px #2a2637; 
 }
 
 img.logo {
@@ -54,11 +60,12 @@ img.logo {
 
 .tab {
     display: flex;
-    gap: 5px;
-    margin: 8px;
+    gap: 16px;
+    margin: 16px;
+    margin-bottom: 22px;
 }
 
-.home {
+/* .home {
 
 }
 
@@ -68,7 +75,7 @@ img.logo {
 
 .about {
 
-}
+} */
 
 .body {
     display: flex;
@@ -195,9 +202,30 @@ img.drink-img {
 }
 
 .btn {
-    background-color: darkred;
+    background-color: #f50056;
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        0px 6px 0px 3px #003147,
+        0px 10px 3px 4px #151024,
+        inset -2px 2px 0px 3px black,
+        inset 0px 30px 0px 0px #313f6b,
+        inset -2px 30px 0px 2px black;
+
+    font-family: "CyberpunkWaifus";
+    padding: 8px 12px;
+    font-size: 24px;
     color: white;
     border-style: none;
+}
+
+.btn:active {
+    background-color: #00f54a;
+    transform: translateY(6px);
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        inset -2px 2px 0px 3px black,
+        inset 0px 30px 0px 0px #313f6b,
+        inset -2px 30px 0px 2px black;
 }
 
 .offer {
