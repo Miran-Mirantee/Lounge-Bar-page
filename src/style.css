@@ -28,6 +28,7 @@ body {
 
 #content {
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(3px);
@@ -77,19 +78,8 @@ img.logo {
     margin-bottom: 22px;
 }
 
-/* .home {
-
-}
-
-.menu {
-
-}
-
-.about {
-
-} */
-
 .body {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +90,7 @@ img.logo {
 .headline {
     font-size: 3rem;
     /* font-weight: bold; */
-    text-shadow: 3px 3px #00699b;
+    text-shadow: 2px 3px #f50056;
     align-self: flex-start;
     padding: 32px;
 }
@@ -178,7 +168,8 @@ img.body-img{
 }
 
 .drink-container {
-    margin: 48px 0;
+    position: relative;
+    margin: 16px 0;
     width: 95%;
     display: flex;
     justify-content: center;
@@ -187,22 +178,47 @@ img.body-img{
 }
 
 .drink {
-    background-color: darkred;
-    width: 150px;
+    position: relative; 
+    background: rgb(49,63,107);
+    background: linear-gradient(180deg, rgba(49,63,107,1) 0%, rgba(49,63,107,1) 29%, rgba(49,75,144,1) 30%, rgba(49,75,144,1) 42%, rgba(49,125,161,1) 43%, rgba(49,125,161,1) 57%, rgba(49,75,144,1) 58%, rgba(49,75,144,1) 70%, rgba(49,63,107,1) 71%, rgba(49,63,107,1) 100%);
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        0px 6px 0px 3px #003147,
+        inset 0px -10px 0px 0px #f50056,
+        inset 0px -13px 0px 0px black,
+        inset -2px 2px 0px 3px black;
+    width: 200px;
+    height: 160px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    text-shadow: 3px 3px black;
+}
+
+.drink:hover {
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        0px 6px 0px 3px #003147,
+        inset 0px -10px 0px 0px #00f54a,
+        inset 0px -13px 0px 0px black,
+        inset -2px 2px 0px 3px black;
 }
 
 .drink-name {
-    align-self: flex-start;
+    font-size: 1.7rem;
 }
 
 img.drink-img {
     height: 64px;
+    padding: 16px 24px;
+    background: rgb(81,51,110);
+    background: radial-gradient(circle, rgba(81,51,110,1) 0%, rgba(21,16,36,1) 75%);
+    box-shadow: 
+        0px 0px 0px 2px #00699b,
+        inset -2px 2px 0px 1px black;
 }
 
 .price {
@@ -232,8 +248,12 @@ img.drink-img {
     border-style: none;
 }
 
+.btn:hover,
 .btn:active {
     background-color: #00f54a;
+}
+
+.btn:active {
     transform: translateY(6px);
     box-shadow: 
         0px 0px 0px 2px #00699b,
@@ -300,9 +320,21 @@ img.plush-img {
 
 .note {
     font-size: 1.5rem;
-    margin: 8px;
+    margin: 16px;
 }
 
 a:visited {
     color: white;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 105%;
+    /* left: -10%; */
+    padding: 16px;
+    width: 350px;
+    background-color: #00f54a;
+    z-index: 1; 
 }

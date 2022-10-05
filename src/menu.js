@@ -45,6 +45,38 @@ drinks.push(new drink('Sunshine Cloud', "../src/assets/img/drinks/SunshineCloud.
 drinks.push(new drink('Suplex', "../src/assets/img/drinks/Suplex.png", "A small twist on the Piledriver, putting more emphasis on the tongue burning and less on the throat burning.", ['Bitter', 'Manly', 'Burning'], 160));
 drinks.push(new drink('Zen Star', "../src/assets/img/drinks/Zen_Star.png", "You'd think something so balanced would actually taste nice... you'd be dead wrong.", ['Sour', 'Promo', 'Bland'], 210));
 
+const displayInfo = (drink, node) => {
+    const check = document.querySelector('.info');
+    if (!check) {
+        const info = document.createElement('div');
+        info.classList.add('info');
+        const desc = document.createElement('div');
+        desc.classList.add('desc');
+        desc.textContent = drink.description;
+        // info.textContent
+
+        // info.style.top = `${getOffset(position).top}px`;
+        // info.style.left = `${getOffset(position).left}px`;
+        info.append(desc);
+        node.appendChild(info);
+    }
+};
+
+const killInfo = (node) => {
+    const info = document.querySelector('.info');
+    if (info)
+        node.removeChild(info);
+}
+
+// temp
+function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+}  
+
 const menu = (content) => {
     const body = document.createElement('div');
     body.classList.add('body');
@@ -58,6 +90,14 @@ const menu = (content) => {
     for (let i = 0; i < drinks.length; i++) {
         const drink = document.createElement('div');
         drink.classList.add('drink');
+        drink.addEventListener('mouseover', () => {
+            displayInfo(drinks[i], drink);
+            // console.log(getOffset(drink));
+            
+        });
+        drink.addEventListener('mouseleave', () => {
+            killInfo(drink);
+        });
 
         const name = document.createElement('div');
         name.classList.add('drink-name');
@@ -70,7 +110,7 @@ const menu = (content) => {
         price.classList.add('price');
         price.textContent = `$${drinks[i].price}`;
 
-        drink.append(name,image, price);
+        drink.append(name, image, price);
         drinkContainer.append(drink);
     }
 
