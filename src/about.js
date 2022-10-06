@@ -80,6 +80,9 @@ const about = (content) => {
         dorothyVid2.classList.add('toggle');
         dorothyVid.classList.remove('toggle');
     });
+    button.addEventListener('click', () => {
+        window.open('https://miran-mirantee.github.io/sign-up-form/');
+    });
 
     signUp.append(plushText, plushImg, button);
     offer.append(vids, signUp);

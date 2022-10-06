@@ -91,6 +91,7 @@ img.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 3px 2px #1b162c;
     width: 100%;
     /* overflow: hidden; */
 }
@@ -286,8 +287,6 @@ img.drink-img {
 
 .portrait-container {
     position: relative;
-    /* height: 100%;
-    width: 100%; */
 }
 
 .toggle {
@@ -297,7 +296,6 @@ img.drink-img {
 .portrait {
     position: absolute;
     right: 1.5%;
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -317,16 +315,18 @@ img.drink-img {
         inset 0px 0px 0px 8px #151024;
 }
 
+.plush.text {
+    text-shadow: 3px 3px black;
+}
+
 @media screen and (max-width: 1500px) {
     .plush.text {
-        color: aqua;
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 1300px) {
     .plush.text {
-        color: aqua;
         font-size: 1.2rem;
     }
     .offer {
@@ -350,7 +350,6 @@ img.drink-img {
         transform: scale(0);
     }
     .plush.text {
-        color: aqua;
         font-size: 1.5rem;
     }
 }

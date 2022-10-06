@@ -89,7 +89,7 @@ const home = () => {
     content.appendChild(body);
 };
 
-about(content);
+// about(content);
 // menu(content);
-// home();
+home();
 
