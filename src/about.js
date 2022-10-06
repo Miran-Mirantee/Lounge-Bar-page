@@ -44,11 +44,24 @@ const about = (content) => {
 
     const offer = document.createElement('div');
     offer.classList.add('offer');
+
+    const vids = document.createElement('div');
+    vids.classList.add('portrait-container');
+
     const dorothyVid = document.createElement('video');
     setAttributes(dorothyVid, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'portrait'});
     const dorothyVidSrc = document.createElement('source');
     setAttributes(dorothyVidSrc, {'src': '../src/assets/video/va11halla-dorothy.mp4', 'type': 'video/mp4'});
     dorothyVid.appendChild(dorothyVidSrc);
+
+    const dorothyVid2 = document.createElement('video');
+    setAttributes(dorothyVid2, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'portrait toggle'});
+    const dorothyVidSrc2 = document.createElement('source');
+    setAttributes(dorothyVidSrc2, {'src': '../src/assets/video/valhalla-persona.mp4', 'type': 'video/mp4'});
+
+    dorothyVid2.appendChild(dorothyVidSrc2);
+    vids.append(dorothyVid, dorothyVid2);
+
     const signUp = document.createElement('div');
     signUp.classList.add('sign-up');
     const plushText = document.createElement('div');
@@ -59,8 +72,17 @@ const about = (content) => {
     const button = document.createElement('button');
     button.classList.add('plush', 'btn');
     button.textContent = `Click here!`;
+    button.addEventListener('mouseover', () => {
+        dorothyVid2.classList.remove('toggle');
+        dorothyVid.classList.add('toggle');
+    });
+    button.addEventListener('mouseleave', () => {
+        dorothyVid2.classList.add('toggle');
+        dorothyVid.classList.remove('toggle');
+    });
+
     signUp.append(plushText, plushImg, button);
-    offer.append(dorothyVid, signUp);
+    offer.append(vids, signUp);
 
     body.append(headline, jillVid, text1, almaVid, text2, offer);
     content.appendChild(body);
