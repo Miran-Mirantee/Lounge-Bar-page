@@ -3,6 +3,8 @@ console.log(`I think it worked!`);
 import menu from './menu.js';
 import about from './about.js';
 import setAttributes from './setAttrs.js';
+import logoImg from './assets/img/logo.png';
+import frontBarImg from './assets/img/bar.webp';
 import './style.css';
 
 const content = document.getElementById('content');
@@ -25,7 +27,7 @@ const header = (() => {
     header.classList.add('header');
 
     const logo = document.createElement('img');
-    setAttributes(logo, {'src': '../src/assets/img/logo.png', 'alt': 'vallhalla logo', 'class': 'logo'});
+    setAttributes(logo, {'src': logoImg, 'alt': 'vallhalla logo', 'class': 'logo'});
     
     const tab = document.createElement('div');
     tab.classList.add('tab');   
@@ -65,7 +67,7 @@ const home = () => {
     welcomeHead.textContent = 'Welcome to VA-11 Hall-A';
 
     const img = document.createElement('img');
-    setAttributes(img, {'src': '../src/assets/img/bar.webp', 'alt': 'vallhalla from outside', 'class': 'body-img'});
+    setAttributes(img, {'src': frontBarImg, 'alt': 'vallhalla from outside', 'class': 'body-img'});
 
     const welcomeText = document.createElement('div');
     welcomeText.classList.add('welcome', 'text');

@@ -1,4 +1,9 @@
 import setAttributes from './setAttrs.js';
+import jillGif from './assets/img/jill-jill-fumo.gif';
+import jillVidWebpack from './assets/video/glitch-anime.mp4';
+import almaVidWebpack from './assets/video/va11halla-alma.mp4';
+import dorothyVidWebpack from './assets/video/va11halla-dorothy.mp4';
+import dorothyVidWebpack2 from './assets/video/valhalla-persona.mp4';
 
 const about = (content) => {
     const body = document.createElement('div');
@@ -11,7 +16,7 @@ const about = (content) => {
     const jillVid = document.createElement('video');
     setAttributes(jillVid, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'vid'});
     const jillVidSrc = document.createElement('source');
-    setAttributes(jillVidSrc, {'src': '../src/assets/video/glitch-anime.mp4', 'type': 'video/mp4'});
+    setAttributes(jillVidSrc, {'src': jillVidWebpack, 'type': 'video/mp4'});
     jillVid.appendChild(jillVidSrc);
 
     const text1 = document.createElement('div');
@@ -30,7 +35,7 @@ const about = (content) => {
     const almaVid = document.createElement('video');
     setAttributes(almaVid, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'vid'});
     const almaVidSrc = document.createElement('source');
-    setAttributes(almaVidSrc, {'src': '../src/assets/video/va11halla-alma.mp4', 'type': 'video/mp4'});
+    setAttributes(almaVidSrc, {'src': almaVidWebpack, 'type': 'video/mp4'});
     almaVid.appendChild(almaVidSrc);
 
     const text2 = document.createElement('div');
@@ -51,13 +56,13 @@ const about = (content) => {
     const dorothyVid = document.createElement('video');
     setAttributes(dorothyVid, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'portrait'});
     const dorothyVidSrc = document.createElement('source');
-    setAttributes(dorothyVidSrc, {'src': '../src/assets/video/va11halla-dorothy.mp4', 'type': 'video/mp4'});
+    setAttributes(dorothyVidSrc, {'src': dorothyVidWebpack, 'type': 'video/mp4'});
     dorothyVid.appendChild(dorothyVidSrc);
 
     const dorothyVid2 = document.createElement('video');
     setAttributes(dorothyVid2, {'autoplay': '', 'muted': '', 'loop': '', 'class': 'portrait toggle'});
     const dorothyVidSrc2 = document.createElement('source');
-    setAttributes(dorothyVidSrc2, {'src': '../src/assets/video/valhalla-persona.mp4', 'type': 'video/mp4'});
+    setAttributes(dorothyVidSrc2, {'src': dorothyVidWebpack2, 'type': 'video/mp4'});
 
     dorothyVid2.appendChild(dorothyVidSrc2);
     vids.append(dorothyVid, dorothyVid2);
@@ -68,7 +73,7 @@ const about = (content) => {
     plushText.classList.add('plush', 'text');
     plushText.textContent = `Sign up now and get FREE Jill plushie!!!`;
     const plushImg = document.createElement('img');
-    setAttributes(plushImg, {'src': '../src/assets/img/jill-jill-fumo.gif', 'alt': 'jill plushie', 'class': 'plush-img'});
+    setAttributes(plushImg, {'src': jillGif, 'alt': 'jill plushie', 'class': 'plush-img'});
     const button = document.createElement('button');
     button.classList.add('plush', 'btn');
     button.textContent = `Click here!`;
