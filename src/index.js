@@ -5,7 +5,7 @@ import about from "./about.js";
 import setAttributes from "./utils/setAttrs.js";
 import logoImg from "./assets/img/logo.png";
 import frontBarImg from "./assets/img/bar.webp";
-import paragraph from "./assets/jsons/index.json";
+import text from "./assets/jsons/homePage.json";
 import "./style.css";
 
 const content = document.getElementById("content");
@@ -38,9 +38,9 @@ const header = (() => {
   homeBtn.classList.add("home", "btn");
   menuBtn.classList.add("menu", "btn");
   aboutBtn.classList.add("about", "btn");
-  homeBtn.textContent = "Home";
-  menuBtn.textContent = "Menu";
-  aboutBtn.textContent = "About";
+  homeBtn.textContent = text.homeBtnText;
+  menuBtn.textContent = text.menuBtnText;
+  aboutBtn.textContent = text.aboutBtnText;
   homeBtn.addEventListener("click", () => {
     clearBody();
     home();
@@ -65,7 +65,7 @@ const home = () => {
 
   const welcomeHead = document.createElement("div");
   welcomeHead.classList.add("welcome", "headline");
-  welcomeHead.textContent = "Welcome to VA-11 Hall-A";
+  welcomeHead.textContent = text.welcome;
 
   const img = document.createElement("img");
   setAttributes(img, {
@@ -79,9 +79,9 @@ const home = () => {
   const p1 = document.createElement("p");
   const p2 = document.createElement("p");
   const p3 = document.createElement("p");
-  p1.textContent = paragraph.paragragh1;
-  p2.textContent = paragraph.paragraph2;
-  p3.textContent = paragraph.paragraph3;
+  p1.textContent = text.paragragh1;
+  p2.textContent = text.paragraph2;
+  p3.textContent = text.paragraph3;
 
   const recommendedContainer = document.createElement("div");
   recommendedContainer.classList.add("recommended-drinks-container");
