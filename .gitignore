@@ -1,2 +1,4 @@
 # ingore node_modules folder
 node_modules
+
+dist
