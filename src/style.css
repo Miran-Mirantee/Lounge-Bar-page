@@ -1,410 +1,395 @@
 @font-face {
-    font-family: CyberpunkWaifus;
-    src: url(./assets/fonts/CyberpunkWaifus.ttf);
+  font-family: CyberpunkWaifus;
+  src: url(./assets/fonts/CyberpunkWaifus.ttf);
 }
 
 body {
-    margin: 0;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    font-family: "CyberpunkWaifus";
-    font-size: 1.8rem;
+  margin: 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: "CyberpunkWaifus";
+  font-size: 1.8rem;
 }
 
 .bg {
-    position: fixed;
-    background-image: url('./assets/img/bg2.webp');
-    top: 0;
-    left: 0;    
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
+  position: fixed;
+  background-image: url("./assets/img/bg2.webp");
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 #content {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(3px);
-    align-items: center;
-    width: 65vw;
-    border: 1px solid #f32a70;
-    box-shadow: 0px 0px 50px 0px #f50056;
-    animation: glowing 2s alternate infinite;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+  align-items: center;
+  width: 65vw;
+  border: 1px solid #f32a70;
+  box-shadow: 0px 0px 50px 0px #f50056;
+  animation: glowing 2s alternate infinite;
 }
 
 @keyframes glowing {
-    0% {
-        box-shadow: 0px 0px 50px 0px #f50056;
-    }
-    50% {
-        box-shadow: 0px 0px 50px 0px #ff005994; 
-    }
-    100% {
-        box-shadow: 0px 0px 50px 0px #f50056;
-    }
+  0% {
+    box-shadow: 0px 0px 50px 0px #f50056;
+  }
+  50% {
+    box-shadow: 0px 0px 50px 0px #ff005994;
+  }
+  100% {
+    box-shadow: 0px 0px 50px 0px #f50056;
+  }
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    padding: 0 18px;
-    background-color: #1b162c;
-    /* background-color: #1f1a2e; */
-    box-shadow: 
-        /* 0px 0px 0px 2px #1f1a2e, */
-        0px 0px 0px 2px #1b162c,
-        0px 0px 0px 4px #151024,
-        0px 0px 0px 10px #1f1a2e,
-        0px 0px 0px 12px #2a2637;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 0 18px;
+  background-color: #1b162c;
+  /* background-color: #1f1a2e; */
+  box-shadow: 
+        /* 0px 0px 0px 2px #1f1a2e, */ 0px 0px 0px 2px #1b162c,
+    0px 0px 0px 4px #151024, 0px 0px 0px 10px #1f1a2e, 0px 0px 0px 12px #2a2637;
 }
 
 img.logo {
-    display: flex;
-    padding: 25px 50px;
-    min-width: 30%;
-    margin: 16px 0;
+  display: flex;
+  padding: 25px 50px;
+  min-width: 30%;
+  margin: 16px 0;
 }
 
 @media screen and (max-width: 1100px) {
-    img.logo {
-        width: 80%;
-    }
+  img.logo {
+    width: 80%;
+  }
 }
 
 .tab {
-    display: flex;
-    gap: 16px;
-    margin: 16px;
-    margin-bottom: 22px;
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+  margin-bottom: 22px;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 3px 2px #1b162c;
-    width: 100%;
-    /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 3px 2px #1b162c;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .headline {
-    font-size: 3rem;
-    text-shadow: 2px 3px #f50056;
-    align-self: flex-start;
-    padding: 32px;
+  font-size: 3rem;
+  text-shadow: 2px 3px #f50056;
+  align-self: flex-start;
+  padding: 32px;
 }
 
 .text {
-    padding: 0 48px;
+  padding: 0 48px;
 }
 
-img.body-img{
-    min-width: 50%;
+img.body-img {
+  min-width: 50%;
 }
 
 .recommended-drinks-container {
-    position: relative;
-    background-color: rgba(243, 42, 112, 0.1);
-    backdrop-filter: blur(1px);
+  position: relative;
+  background-color: rgba(243, 42, 112, 0.1);
+  backdrop-filter: blur(1px);
 
-    outline: 1px solid #f32a70;
-    width: 100%;
-    height: 130px;
-    overflow: hidden;
+  outline: 1px solid #f32a70;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
 }
 
 .recommended-drinks {
-    position: absolute;
-    bottom: 0%;
-    background-image: 
-        url(./assets/img/drinks/Bad_Touch.png), 
-        url(./assets/img/drinks/Brandtini.png), 
-        /* url(./assets/img/drinks/BlueFairy.png), */
-        url(./assets/img/drinks/Fluffy_Dream.png),
-        url(./assets/img/drinks/Marsblast.png),
-        url(./assets/img/drinks/Cobalt_Velvet.png),
-        url(./assets/img/drinks/FlamingMoai.png),
-        url(./assets/img/drinks/Piano_Man.png),
-        url(./assets/img/drinks/Suplex.png),
-        url(./assets/img/drinks/Bleeding_Jane.png),
-        url(./assets/img/drinks/GutPunch.png)
-    ;
-    background-position: 
-        0% 50%,
-        10% 50%, 
-        20% 50%, 
-        30% 50%, 
-        40% 50%,
-        50% 50%,
-        60% 50%,
-        71% 50%,
-        81% 50%,
-        92% 50%
-    /* 100% 50% */
-    ;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    animation: right-to-left 10s linear infinite;
+  position: absolute;
+  bottom: 0%;
+  background-image: url(./assets/img/drinks/Bad_Touch.png),
+    url(./assets/img/drinks/Brandtini.png),
+    /* url(./assets/img/drinks/BlueFairy.png), */
+      url(./assets/img/drinks/Fluffy_Dream.png),
+    url(./assets/img/drinks/Marsblast.png),
+    url(./assets/img/drinks/Cobalt_Velvet.png),
+    url(./assets/img/drinks/FlamingMoai.png),
+    url(./assets/img/drinks/Piano_Man.png), url(./assets/img/drinks/Suplex.png),
+    url(./assets/img/drinks/Bleeding_Jane.png),
+    url(./assets/img/drinks/GutPunch.png);
+  background-position: 0% 50%, 10% 50%, 20% 50%, 30% 50%, 40% 50%, 50% 50%,
+    60% 50%, 71% 50%, 81% 50%, 92% 50% /* 100% 50% */;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  animation: right-to-left 10s linear infinite;
 }
 
 @keyframes right-to-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .recommended-drinks.second {
-    animation: right-to-left2 10s linear infinite
+  animation: right-to-left2 10s linear infinite;
 }
 
 @keyframes right-to-left2 {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .drink-container {
-    position: relative;
-    margin: 16px 0;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    gap: 50px;
+  position: relative;
+  margin: 16px 0;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 50px;
 }
 
 .drink {
-    position: relative; 
-    background: rgb(49,63,107);
-    background: linear-gradient(180deg, rgba(49,63,107,1) 0%, rgba(49,63,107,1) 29%, rgba(49,75,144,1) 30%, rgba(49,75,144,1) 42%, rgba(49,125,161,1) 43%, rgba(49,125,161,1) 57%, rgba(49,75,144,1) 58%, rgba(49,75,144,1) 70%, rgba(49,63,107,1) 71%, rgba(49,63,107,1) 100%);
-    box-shadow: 
-        0px 0px 0px 2px #00699b,
-        0px 6px 0px 3px #003147,
-        inset 0px -10px 0px 0px #f50056,
-        inset 0px -13px 0px 0px black,
-        inset -2px 2px 0px 3px black;
-    width: 200px;
-    height: 160px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    text-shadow: 3px 3px black;
+  position: relative;
+  background: rgb(49, 63, 107);
+  background: linear-gradient(
+    180deg,
+    rgba(49, 63, 107, 1) 0%,
+    rgba(49, 63, 107, 1) 29%,
+    rgba(49, 75, 144, 1) 30%,
+    rgba(49, 75, 144, 1) 42%,
+    rgba(49, 125, 161, 1) 43%,
+    rgba(49, 125, 161, 1) 57%,
+    rgba(49, 75, 144, 1) 58%,
+    rgba(49, 75, 144, 1) 70%,
+    rgba(49, 63, 107, 1) 71%,
+    rgba(49, 63, 107, 1) 100%
+  );
+  box-shadow: 0px 0px 0px 2px #00699b, 0px 6px 0px 3px #003147,
+    inset 0px -10px 0px 0px #f50056, inset 0px -13px 0px 0px black,
+    inset -2px 2px 0px 3px black;
+  width: 200px;
+  height: 160px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 3px 3px black;
 }
 
 .drink:hover {
-    box-shadow: 
-    0px 0px 0px 2px #00699b,
-    0px 6px 0px 3px #003147,
-    inset 0px -10px 0px 0px #00f54a,
-    inset 0px -13px 0px 0px black,
+  box-shadow: 0px 0px 0px 2px #00699b, 0px 6px 0px 3px #003147,
+    inset 0px -10px 0px 0px #00f54a, inset 0px -13px 0px 0px black,
     inset -2px 2px 0px 3px black;
 }
 
 .drink-name {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 img.drink-img {
-    height: 64px;
-    padding: 16px 24px;
-    background: rgb(81,51,110);
-    background: radial-gradient(circle, rgba(81,51,110,1) 0%, rgba(21,16,36,1) 75%);
-    box-shadow: 
-        0px 0px 0px 2px #00699b,
-        inset -2px 2px 0px 1px black;
+  height: 64px;
+  padding: 16px 24px;
+  background: rgb(81, 51, 110);
+  background: radial-gradient(
+    circle,
+    rgba(81, 51, 110, 1) 0%,
+    rgba(21, 16, 36, 1) 75%
+  );
+  box-shadow: 0px 0px 0px 2px #00699b, inset -2px 2px 0px 1px black;
 }
 
 .price {
-    font-size: 1.5rem;
-    align-self: flex-end;
+  font-size: 1.5rem;
+  align-self: flex-end;
 }
 
 .vid {
-    width: 600px;
-    height: auto;
+  width: 600px;
+  height: auto;
 }
 
 @media screen and (max-width: 1000px) {
-    .vid {
-        width: 90%;
-    }
+  .vid {
+    width: 90%;
+  }
 }
 
 .btn {
-    background-color: #f50056;
-    box-shadow: 
-        0px 0px 0px 2px #00699b,
-        0px 6px 0px 3px #003147,
-        0px 10px 3px 4px #151024,
-        inset -2px 2px 0px 3px black,
-        inset 0px 30px 0px 0px #313f6b,
-        inset -2px 30px 0px 2px black;
+  background-color: #f50056;
+  box-shadow: 0px 0px 0px 2px #00699b, 0px 6px 0px 3px #003147,
+    0px 10px 3px 4px #151024, inset -2px 2px 0px 3px black,
+    inset 0px 30px 0px 0px #313f6b, inset -2px 30px 0px 2px black;
 
-    font-family: "CyberpunkWaifus";
-    padding: 8px 12px;
-    font-size: 24px;
-    color: white;
-    border-style: none;
+  font-family: "CyberpunkWaifus";
+  padding: 8px 12px;
+  font-size: 24px;
+  color: white;
+  border-style: none;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #00f54a;
+  background-color: #00f54a;
 }
 
 .btn:active {
-    transform: translateY(6px);
-    box-shadow: 
-        0px 0px 0px 2px #00699b,
-        inset -2px 2px 0px 3px black,
-        inset 0px 30px 0px 0px #313f6b,
-        inset -2px 30px 0px 2px black;
+  transform: translateY(6px);
+  box-shadow: 0px 0px 0px 2px #00699b, inset -2px 2px 0px 3px black,
+    inset 0px 30px 0px 0px #313f6b, inset -2px 30px 0px 2px black;
 }
 
 .offer {
-    display: grid;
-    width: 60%;
-    grid-template-columns: 1fr 1fr;
-    margin: 16px 0;
+  display: grid;
+  width: 60%;
+  grid-template-columns: 1fr 1fr;
+  margin: 16px 0;
 }
 
 .portrait-container {
-    position: relative;
+  position: relative;
 }
 
 .toggle {
-    opacity: 0;
+  opacity: 0;
 }
 
 .portrait {
-    position: absolute;
-    right: 1.5%;
-    height: 100%;
+  position: absolute;
+  right: 1.5%;
+  height: 100%;
 }
 
 .sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding: 24px 8px;
-    padding-bottom: 32px;
-    gap: 16px;
-    background: radial-gradient(circle, rgba(81,51,110,1) 0%, rgba(21,16,36,1) 45%);
-    box-shadow: 
-        0px 0px 0px 2px #2a2637,
-        inset 0px 0px 0px 6px #1f1a2e,
-        inset 0px 0px 0px 8px #151024;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 24px 8px;
+  padding-bottom: 32px;
+  gap: 16px;
+  background: radial-gradient(
+    circle,
+    rgba(81, 51, 110, 1) 0%,
+    rgba(21, 16, 36, 1) 45%
+  );
+  box-shadow: 0px 0px 0px 2px #2a2637, inset 0px 0px 0px 6px #1f1a2e,
+    inset 0px 0px 0px 8px #151024;
 }
 
 .plush.text {
-    text-shadow: 3px 3px black;
+  text-shadow: 3px 3px black;
 }
 
 @media screen and (max-width: 1500px) {
-    .plush.text {
-        font-size: 1.5rem;
-    }
+  .plush.text {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .plush.text {
-        font-size: 1.2rem;
-    }
-    .offer {
-        width: 75%;
-    }
+  .plush.text {
+    font-size: 1.2rem;
+  }
+  .offer {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .offer {
-        width: 90%;
-    }
+  .offer {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 830px) {
-    .offer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .portrait-container {
-        transform: scale(0);
-    }
-    .plush.text {
-        font-size: 1.5rem;
-    }
+  .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portrait-container {
+    transform: scale(0);
+  }
+  .plush.text {
+    font-size: 1.5rem;
+  }
 }
 
 img.plush-img {
-    height: auto;
-    width: 50%;
+  height: auto;
+  width: 50%;
 }
 
 .note {
-    font-size: 1.5rem;
-    margin: 16px;
+  font-size: 1.5rem;
+  margin: 16px;
+  color: white;
 }
 
 a:visited {
-    color: white;
+  color: white;
 }
 
 .info {
-    position: absolute;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 20px;
-    width: 350px;
-    text-shadow: 3px 2px #1b162c;
-    background-color: black;
-    box-shadow: 
-        0px 0px 0px 2px #2a2637,
-        inset 0px 0px 0px 6px #1f1a2e,
-        inset 0px 0px 0px 8px #151024;
-    z-index: 1; 
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  width: 350px;
+  text-shadow: 3px 2px #1b162c;
+  background-color: black;
+  box-shadow: 0px 0px 0px 2px #2a2637, inset 0px 0px 0px 6px #1f1a2e,
+    inset 0px 0px 0px 8px #151024;
+  z-index: 1;
 }
 
 .info.left {
-    top: 0;
-    right: 105%; 
+  top: 0;
+  right: 105%;
 }
 
 .info.right {
-    top: 0;
-    left: 105%;
+  top: 0;
+  left: 105%;
 }
 
 .info.bottom {
-    top: 110%;
+  top: 110%;
 }
 
 .info.top {
-    bottom: 105%;
+  bottom: 105%;
 }
 
 .flavour {
-    margin-top: 24px;
+  margin-top: 24px;
 }
